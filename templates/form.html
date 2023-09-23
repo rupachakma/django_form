@@ -1,0 +1,28 @@
+{% include "header.html" %}
+<div style="margin-top: 120px; margin-bottom: 50px;" class="container">
+    <form method="POST">
+        {% csrf_token %}
+        <div>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input style="width:50%" type="text" class="form-control" name="n1" placeholder="Enter name">
+                <br/>
+                
+              </div>
+              <div class="form-group">
+                <label for="">Address</label>
+                <input style="width:50%" type="text" class="form-control" name="a1" placeholder="Address">
+              </div><br/>
+              <div class="form-group">
+                <label for="">Department</label>
+                <input style="width:50%" type="text" class="form-control" name="d1" placeholder="Department">
+              <br/>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <br/>
+              <br/>
+              {{x}}<br/>{{y}}<br/>{{z}}
+        </div>
+      </form>
+</div>
+  {% include "footer.html" %}
